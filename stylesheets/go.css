@@ -214,7 +214,7 @@ img.flat-image {
   padding: 50px 20px;
   background-color: #fff;
   box-shadow: 0 5px 15px 0 rgba(92, 50, 50, .1), 0 15px 35px 0 rgba(92, 50, 50, .15), 0 50px 100px 0 rgba(0, 0, 0, .1);
-  font-size: 24px;
+  font-size: 18px;
   color: #777f85;
 }
 
@@ -317,7 +317,7 @@ img.flat-image {
     padding: 40px;
     background-color: #fff;
     box-shadow: 0 5px 15px 0 rgba(92, 50, 50, .1), 0 15px 35px 0 rgba(92, 50, 50, .15), 0 50px 100px 0 rgba(0, 0, 0, .1);
-    font-size: 24px;
+    font-size: 18px;
     color: #777f85;
   }
 
@@ -329,7 +329,7 @@ img.flat-image {
     border-radius: 6px;
     background-color: #2761ab;
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     margin-top: 20px;
   }

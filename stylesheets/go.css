@@ -650,3 +650,30 @@ h2.contact-title {
     padding-right: 15px;
   }
 }
+
+.popover {
+  border: none;
+  max-width: 400px;
+}
+
+.popover-body {
+  background: #2761ab;
+  color: #fff;
+}
+
+.fa-exclamation-triangle {
+  padding-right: 5px;
+}
+
+.bs-popover-auto[x-placement^=bottom] .arrow::after, .bs-popover-bottom .arrow::after {
+  border-bottom-color: #2761ab;
+}
+
+.bs-popover-auto[x-placement^=bottom] .arrow::before, .bs-popover-bottom .arrow::before {
+  border-bottom: none;
+}
+
+#termsPopover {
+  display: none;
+  position: relative;
+}

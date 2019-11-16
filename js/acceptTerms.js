@@ -31,3 +31,8 @@ function initAcceptTerms() {
 $(document).ready(function(){
   initAcceptTerms();
 });
+
+
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover(); 
+});

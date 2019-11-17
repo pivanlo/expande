@@ -677,3 +677,24 @@ h2.contact-title {
   display: none;
   position: relative;
 }
+
+.dropdown-toggle::after {
+  margin-left: 5px !important;
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    display: inline-block;
+  }
+
+  .navbar-nav-scroll {
+    height: auto;
+  }
+
+  .navbar-nav-scroll .navbar-nav {
+    display: block;
+    white-space: normal;
+    text-align: center;
+    padding-bottom: 0;
+  }
+}

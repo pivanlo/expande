@@ -1,36 +1,4 @@
-/**
- * Enables the submit button when the accept terms checbox is checked.
- */
-function initAcceptTerms() {
-  // $('#accept-terms').on('change', function(event) {
-  //   var checked = this.checked;
-  //   var $submitButton = $('.contact-form button[type="submit"]');
-  //   if (checked) {
-  //     $submitButton.removeAttr('disabled')
-  //   } else {
-  //     $submitButton.attr('disabled', true)
-  //   }
-  // });
-
-  var forms = document.getElementsByClassName('needs-validation');
-  // Loop over them and prevent submission
-  var validation = Array.prototype.filter.call(forms, function(form) {
-    form.addEventListener('submit', function(event) {
-      // if (form.checkValidity() === false) {
-        console.log('here')
-        event.preventDefault();
-        event.stopPropagation();
-      // }
-      form.classList.add('was-validated');
-    }, false);
-  });
-
-}
-
 function handleSubmit(event) {
-  event.preventDefault();
-  event.stopPropagation();
-
   var $name = $('#name');
   var $email = $('#email');
   var $message = $('#message');
@@ -44,6 +12,8 @@ function handleSubmit(event) {
   // Validate name
   if (!$name.val()) {
     $name.popover('show');
+    event.preventDefault();
+    event.stopPropagation();
     return;
   } else {
     $name.popover('hide');
@@ -52,12 +22,16 @@ function handleSubmit(event) {
   // Validate email
   var emailValue = $email.val();
   if (!emailValue) {
-    $email.attr('data-content', '<i class="fas fa-exclamation"></i> Porfavor introduce tu correo electrónico.');
+    $email.attr('data-content', '<i class="fas fa-exclamation-triangle"></i> Porfavor introduce tu correo electrónico.');
     $email.popover('show');
+    event.preventDefault();
+    event.stopPropagation();
     return;
   } else if (!validateEmail(emailValue)) {
-    $email.attr('data-content', '<i class="fas fa-exclamation"></i> El correo electrónico no tiene un formato válido.');
+    $email.attr('data-content', '<i class="fas fa-exclamation-triangle"></i> El correo electrónico no tiene un formato válido.');
     $email.popover('show');
+    event.preventDefault();
+    event.stopPropagation();
     return;
   } else {
     $email.popover('hide');
@@ -66,6 +40,8 @@ function handleSubmit(event) {
   // Validate message
   if (!$message.val()) {
     $message.popover('show');
+    event.preventDefault();
+    event.stopPropagation();
     return;
   } else {
     $message.popover('hide');
@@ -74,10 +50,10 @@ function handleSubmit(event) {
   // Validate terms
   if (!$('#terms').is(":checked")) {
     $('#termsPopover').show();
+    event.preventDefault();
+    event.stopPropagation();
     return;
   }
-
-  console.log('sending!');
 }
 
 function handleInputKeyUp() {
@@ -95,11 +71,10 @@ function handleTermsChange() {
 
 
 $(document).ready(function(){
-  $('input').popover({trigger: 'manual'});
+  $('input, textarea').popover({trigger: 'manual'});
   $('.contact-form').submit(handleSubmit);
   $('#name, #email, #message').keyup(handleInputKeyUp);
   $('#terms').change(handleTermsChange);
-  // initAcceptTerms();
 });
 
 function validateEmail(email) {

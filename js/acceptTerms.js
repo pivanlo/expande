@@ -5,11 +5,13 @@ function validateEmail(email) {
 
 function handleSubmit(event) {
   var $name = $('#name');
+  var $surnames = $('#surnames');
   var $email = $('#email');
   var $message = $('#message');
 
   // Hide all errors
   $name.popover('hide');
+  $surnames.popover('hide');
   $email.popover('hide');
   $message.popover('hide');
   $('#termsPopover').hide();
@@ -22,6 +24,18 @@ function handleSubmit(event) {
     return;
   } else {
     $name.popover('hide');
+  }
+
+  // Validate surnames
+  if ($('#surnames').length) {
+    if (!$surnames.val()) {
+      $surnames.popover('show');
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    } else {
+      $surnames.popover('hide');
+    }
   }
 
   // Validate email

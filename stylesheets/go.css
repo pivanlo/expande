@@ -544,7 +544,7 @@ img.flat-image {
 }
 
 .nav-mobile .nav-item {
-  margin-left: 15px;
+  margin: 0 10px;
 }
 
 @media (max-width: 576px) {

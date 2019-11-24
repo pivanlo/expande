@@ -1,5 +1,5 @@
-var CLIENT_ID = '515764685917-f5v258kg2bitfmio1b2aef73rvju1ijv.apps.googleusercontent.com';
-var API_KEY = 'AIzaSyA36q0aaIYg_4bacA9lqZDelMVYXvSZbRw';
+var CLIENT_ID = '';
+var API_KEY = '';
 var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
 var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
 

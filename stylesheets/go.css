@@ -442,13 +442,26 @@ img.flat-image {
   z-index: 9999;
 }
 
+.cookies-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .cookies-buttons {
+    margin-top: 0px;
+  }
+}
+
 .btn-on-blue {
   padding: .375rem .75rem !important;
   margin-bottom: 0px;
   margin-right: 10px;
 }
 
-.btn-on-blue:hover {
+.btn-on-blue:hover:enabled {
   background-color: #fff !important;
   color: #2761ab !important;
 }

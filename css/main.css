@@ -30,7 +30,6 @@ body {
 .section-2-block {
   padding: 60px 20px;
   color: white;
-  z-index: 999;
 }
 
 .section-2-block h2 {
@@ -84,7 +83,6 @@ img.floating-image {
   margin: 0 auto;
   position: relative;
   padding-bottom: 80px;
-  z-index: 1001;
   font-size: 17px;
 }
 
@@ -226,7 +224,6 @@ img.floating-image {
   background-color: #204f8d;
   color: #fff;
   padding: 15px 40px;
-  z-index: 9999;
 }
 
 .cookies-buttons {

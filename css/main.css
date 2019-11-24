@@ -3,10 +3,6 @@ body {
   background: #eee;
 }
 
-p {
-  margin-bottom: 20px;
-}
-
 .navbar {
   background-color: #204f8d;
 }
@@ -156,10 +152,6 @@ img.flat-image {
   color: #fff;
 }
 
-.companies {
-  text-align: center;
-}
-
 .btn-orange {
   border-radius: 6px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fb9e5a), to(#fd5d44));
@@ -200,10 +192,6 @@ img.flat-image {
   margin-top: 20px;
 }
 
-.companies img {
-  height: 60px;
-}
-
 @media (min-width: 992px) {
   .footer-links {
     margin-left: 0px;
@@ -242,10 +230,6 @@ img.flat-image {
     margin-top: 20px;
   }
 
-  .companies img {
-    height: 100px;
-  }
-
   .section-3-block h2 {
     font-size: 48px;
     }
@@ -270,17 +254,6 @@ img.flat-image {
   .section-5 {
     padding: 100px 70px;
   }
-}
-
-.gradient-text {
-  background-image: -webkit-linear-gradient(235deg, #fb9e5a, #fd5d44);
-  background-image: -moz-linear-gradient(235deg, #fb9e5a, #fd5d44);
-  background-image: -ms-linear-gradient(235deg, #fb9e5a, #fd5d44);
-  background-image: -o-linear-gradient(235deg, #fb9e5a, #fd5d44);
-  background-image: linear-gradient(235deg, #fb9e5a, #fd5d44);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .projects-sidebar {
@@ -516,15 +489,6 @@ h2.contact-title {
     font-size: 26px;
   }
 }
-
-/*.nav-mobile {
-  mask-image: -webkit-linear-gradient(to right, transparent, black 10%, black 80%, transparent);
-  mask-image: -moz-linear-gradient(to right, transparent, black 10%, black 80%, transparent);
-  mask-image: linear-gradient(to right, transparent, black 10%, black 80%, transparent);
-  -webkit-mask-image: -webkit-linear-gradient(to right, transparent, black 10%, black 80%, transparent);
-  -webkit-mask-image: -moz-linear-gradient(to right, transparent, black 10%, black 80%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 80%, transparent);
-}*/
 
 @media (min-width: 576px) {
   .hero h1 {

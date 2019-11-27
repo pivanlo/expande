@@ -16,7 +16,7 @@ p {
   font-size: 18px;
 }
 
-a {
+a, a:hover {
   color: #92b;
 }
 
@@ -104,10 +104,10 @@ img.floating-image {
   font-size: 17px;
 }
 
-.section-3-block h2 {
+/*.section-3-block h2 {
   font-size: 34px;
 }
-
+*/
 .section-4 {
   padding: 100px 0px;
 }
@@ -177,9 +177,9 @@ img.floating-image {
     margin-top: 20px;
   }
 
-  .section-3-block h2 {
+/*  .section-3-block h2 {
     font-size: 48px;
-    }
+    }*/
 
   .section-4-block h2 {
     font-size: 48px;

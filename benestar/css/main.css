@@ -1,6 +1,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background: #eee;
+
+  padding-top: 60px;
 }
 
 .navbar {
@@ -12,7 +14,7 @@ body {
 }
 
 p {
-  color: #777;
+  color: #666;
   font-size: 18px;
 }
 
@@ -36,9 +38,9 @@ a, a:hover {
   margin-left: 40px;
 }
 
-.hero {
+/*.hero {
   padding-top: 60px;
-}
+}*/
 
 .section-2 {
   background: #723e9a;
@@ -124,15 +126,13 @@ img.floating-image {
   background-color: #fff;
   box-shadow: 0 5px 15px 0 rgba(92, 50, 50, .1), 0 15px 35px 0 rgba(92, 50, 50, .15), 0 50px 100px 0 rgba(0, 0, 0, .1);
   font-size: 18px;
-  color: #777f85;
 }
 
 .footer {
   background-color: #fff;
-  padding: 40px 0px 70px;
+  padding: 40px 0px;
   color: #a8b3ba;
   line-height: 18px;
-  padding-bottom: 0px;
 }
 
 .footer-nav a {
@@ -151,10 +151,6 @@ img.floating-image {
     margin-left: 0px;
   }
 
-  .footer-logo {
-    float: left;
-  }
-
   .footer-copyright {
     float: left;
   }
@@ -164,7 +160,7 @@ img.floating-image {
     background-color: #fff;
     box-shadow: 0 5px 15px 0 rgba(92, 50, 50, .1), 0 15px 35px 0 rgba(92, 50, 50, .15), 0 50px 100px 0 rgba(0, 0, 0, .1);
     font-size: 18px;
-    color: #777f85;
+    color: #666;
   }
 
   .section-4 {
@@ -440,7 +436,7 @@ h2.contact-title {
 }
 
 .popover-body {
-  background: #723e9a;
+  background: #f3888f;
   color: #fff;
 }
 
@@ -449,7 +445,7 @@ h2.contact-title {
 }
 
 .bs-popover-auto[x-placement^=bottom] .arrow::after, .bs-popover-bottom .arrow::after {
-  border-bottom-color: #723e9a;
+  border-bottom-color: #f3888f;
 }
 
 .bs-popover-auto[x-placement^=bottom] .arrow::before, .bs-popover-bottom .arrow::before {
@@ -480,4 +476,13 @@ h2.contact-title {
     text-align: center;
     padding-bottom: 0;
   }
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #eee;
 }

@@ -486,3 +486,9 @@ h2.contact-title {
 .footer {
   background-color: #eee;
 }
+
+@media (min-width: 768px) {
+  #logo {
+    display: none;
+  }
+}

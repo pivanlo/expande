@@ -2,7 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #eee;
 
-  padding-top: 60px;
+  /*padding-top: 60px;*/
 }
 
 .navbar {
@@ -36,6 +36,7 @@ a, a:hover {
   color: #fff !important;
   letter-spacing: 1.5px;
   margin-left: 40px;
+  white-space: nowrap;
 }
 
 /*.hero {
@@ -182,8 +183,7 @@ img.floating-image {
   }
 
   .section-2-block {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 100px;
   }
 }
 
@@ -301,16 +301,12 @@ img.floating-image {
 @media (max-width: 992px) {
   .navbar-nav-scroll {
     max-width: 100%;
-    height: 38px;
-    overflow: hidden;
   }
 
-  .navbar-nav-scroll .navbar-nav {
-    padding-bottom: 2rem;
-    overflow-x: auto;
+/*  .navbar-nav-scroll .navbar-nav {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-  }
+  }*/
 
   .navbar-nav a {
     padding: 10px 0;
@@ -321,13 +317,13 @@ img.floating-image {
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .nav-mobile {
     display: none;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .nav-desktop {
     display: none;
   }
@@ -436,7 +432,7 @@ h2.contact-title {
 }
 
 .popover-body {
-  background: #f3888f;
+  background: #ef5d66;
   color: #fff;
 }
 
@@ -445,7 +441,7 @@ h2.contact-title {
 }
 
 .bs-popover-auto[x-placement^=bottom] .arrow::after, .bs-popover-bottom .arrow::after {
-  border-bottom-color: #f3888f;
+  border-bottom-color: #ef5d66;
 }
 
 .bs-popover-auto[x-placement^=bottom] .arrow::before, .bs-popover-bottom .arrow::before {
@@ -461,7 +457,7 @@ h2.contact-title {
   margin-left: 5px !important;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .nav-link {
     display: inline-block;
   }
@@ -485,4 +481,53 @@ h2.contact-title {
 
 .footer {
   background-color: #eee;
+}
+
+@media (min-width: 992px) {
+  .fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
+@media (max-width: 992px) {
+  #home .navbar-brand {
+    display: none;
+  }
+
+  .nav-mobile {
+    width: 100%;
+  }
+
+  .section-2-block {
+    padding-top: 0;
+  }
+}
+
+#estado-optimo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 487px;
+  background-image: url("../images/estado-optimo.png");
+  background-color: #f6a16b;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 60px;
+  line-height: 2;
+  margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+  #estado-optimo {
+    font-size: 20px;
+    padding: 0 20px;
+  }
 }

@@ -190,7 +190,8 @@ img.floating-image {
   margin-bottom: 80px;
 }
 
-.projects-sidebar a {
+.projects-sidebar a,
+.projects-sidebar span {
   text-decoration: none;
   display: block;
   padding: 10px 15px;

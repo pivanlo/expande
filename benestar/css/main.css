@@ -125,7 +125,7 @@ img.floating-image {
 .section-4-form {
   padding: 50px 20px;
   background-color: #fff;
-  box-shadow: 0 5px 15px 0 rgba(92, 50, 50, .1), 0 15px 35px 0 rgba(92, 50, 50, .15), 0 50px 100px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 0 15px 35px 0 rgba(0, 0, 0, 0.2), 0 50px 100px 0 rgba(0, 0, 0, 0.2);
   font-size: 18px;
 }
 
@@ -159,7 +159,7 @@ img.floating-image {
   .section-4-form {
     padding: 40px;
     background-color: #fff;
-    box-shadow: 0 5px 15px 0 rgba(92, 50, 50, .1), 0 15px 35px 0 rgba(92, 50, 50, .15), 0 50px 100px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 0 15px 35px 0 rgba(0, 0, 0, 0.2), 0 50px 100px 0 rgba(0, 0, 0, 0.2);
     font-size: 18px;
     color: #666;
   }
@@ -295,7 +295,7 @@ img.floating-image {
 }
 
 .contact {
-  box-shadow: 0 5px 15px 0 rgba(92, 50, 50, .1), 0 15px 35px 0 rgba(92, 50, 50, .15), 0 50px 100px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 0 15px 35px 0 rgba(0, 0, 0, 0.2), 0 50px 100px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 992px) {

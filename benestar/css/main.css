@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-  background-color: #723e9a;
+  background-color: #5e3380;
 }
 
 .navbar .container {
@@ -183,7 +183,7 @@ img.floating-image {
   }
 
   .section-2-block {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 }
 
@@ -518,7 +518,7 @@ h2.contact-title {
   background-image: url("../images/estado-optimo.png");
   background-color: #f6a16b;
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   padding: 0 60px;
   line-height: 2;

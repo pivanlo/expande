@@ -541,3 +541,16 @@ h2.contact-title {
   background: #723e9a;
   color: #fff;
 }
+
+.quote {
+  border-left: 5px solid #723e9a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.quote>div {
+  margin-top: 20px;
+  font-weight: bold;
+}

@@ -135,6 +135,10 @@ img.floating-image {
   line-height: 18px;
 }
 
+.footer a {
+  color: #a8b3ba;
+}
+
 .footer-nav a {
   color: #a8b3ba !important;
   line-height: 50px;
@@ -283,10 +287,6 @@ img.floating-image {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1.5px;
-  margin-bottom: 15px;
-}
-
-.footer-links {
   margin-bottom: 15px;
 }
 
@@ -477,6 +477,7 @@ h2.contact-title {
 .footer-links-container {
   display: flex;
   justify-content: space-between;
+  line-height: 40px;
 }
 
 .footer {

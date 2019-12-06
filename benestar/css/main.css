@@ -577,3 +577,9 @@ h2.contact-title {
   font-size: 35px;
   line-height: 80px;
 }
+
+.white-link,
+.white-link:hover {
+  color: white;
+  text-decoration: none;
+}

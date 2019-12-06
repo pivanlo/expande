@@ -8,10 +8,6 @@ body {
   background-color: #5e3380;
 }
 
-.navbar .container {
-  line-height: 50px;
-}
-
 p {
   color: #666;
   font-size: 18px;
@@ -526,13 +522,6 @@ h2.contact-title {
   margin-top: 30px;
 }
 
-@media (max-width: 992px) {
-  #estado-optimo {
-    font-size: 20px;
-    padding: 0 20px;
-  }
-}
-
 .header {
   padding: 80px 0;
   text-align: center;
@@ -541,6 +530,11 @@ h2.contact-title {
 .secondary-bg {
   background: #723e9a;
   color: #fff;
+}
+
+.primary-bg {
+  background: #fff;
+  color: #666;
 }
 
 .quote {
@@ -587,4 +581,9 @@ h2.contact-title {
 
 .team-member-title {
   font-size: 16px;
+}
+
+#social-icons {
+  font-size: 35px;
+  line-height: 80px;
 }

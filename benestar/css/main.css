@@ -400,12 +400,6 @@ h2.contact-title {
 }
 
 @media (max-width: 576px) {
-  h2.contact-title {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 576px) {
   .footer-link-one-line {
     display: block;
     margin-bottom: 15px;

@@ -5,16 +5,13 @@ function validateEmail(email) {
 
 function handleSubmit(event) {
   var $name = $('#name');
-  var $surnames = $('#surnames');
   var $email = $('#email');
   var $message = $('#message');
 
   // Hide all errors
   $name.popover('hide');
-  $surnames.popover('hide');
   $email.popover('hide');
   $message.popover('hide');
-  $('#termsPopover').hide();
 
   // Validate name
   if (!$name.val()) {
@@ -24,18 +21,6 @@ function handleSubmit(event) {
     return;
   } else {
     $name.popover('hide');
-  }
-
-  // Validate surnames
-  if ($('#surnames').length) {
-    if (!$surnames.val()) {
-      $surnames.popover('show');
-      event.preventDefault();
-      event.stopPropagation();
-      return;
-    } else {
-      $surnames.popover('hide');
-    }
   }
 
   // Validate email
@@ -65,14 +50,6 @@ function handleSubmit(event) {
   } else {
     $message.popover('hide');
   }
-
-  // Validate terms
-  if (!$('#terms').is(":checked")) {
-    $('#termsPopover').show();
-    event.preventDefault();
-    event.stopPropagation();
-    return;
-  }
 }
 
 function handleInputKeyUp() {
@@ -81,17 +58,9 @@ function handleInputKeyUp() {
   }
 };
 
-function handleTermsChange() {
-  if ($('#terms').is(":checked")) {
-    $('#termsPopover').hide();
-    return;
-  }
-};
-
 
 $(document).ready(function(){
   $('input, textarea').popover({trigger: 'manual'});
   $('.contact-form').submit(handleSubmit);
   $('#name, #email, #message').keyup(handleInputKeyUp);
-  $('#terms').change(handleTermsChange);
 });

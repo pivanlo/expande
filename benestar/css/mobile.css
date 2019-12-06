@@ -43,3 +43,7 @@ h2 {
 .header {
   padding: 60px 0;
 }
+
+.team-member-title {
+  font-size: 14px;
+}

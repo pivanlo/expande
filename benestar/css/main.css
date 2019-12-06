@@ -542,9 +542,8 @@ h2.contact-title {
 
 .team-member-card {
   background: #ddd;
-  /*width:0px;*/
   width: 100%;
-  margin-right: 50px;
+  margin-bottom: 50px;
   float: left;
   background-color: #2e3e4a;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 0 15px 35px 0 rgba(0, 0, 0, 0.2), 0 50px 100px 0 rgba(0, 0, 0, 0.2);

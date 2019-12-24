@@ -8,7 +8,7 @@ body {
 }
 
 .navbar .container {
-  padding-top: 5px;
+  padding: 13px 30px 8px;
   line-height: 20px;
 }
 
@@ -46,4 +46,60 @@ h2 {
 
 .team-member-title {
   font-size: 14px;
+}
+
+form {
+  margin: 0 20px;
+}
+
+.col-mobile-12 {
+  grid-column: 1 / 13;
+}
+
+#footer-logo>img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#social-icons {
+  grid-column: 1 / 13;
+}
+
+#social-icons a {
+  margin: 0 20px;
+}
+
+.hero>.container>div {
+  grid-column: 2 / 12;
+}
+
+.navbar-brand {
+  grid-column: 1 / 13;
+  margin: 0 auto;
+}
+
+.nav-mobile {
+  grid-column: 1 / 13;
+}
+
+.contact {
+  grid-column: 2 / 12;
+}
+
+.map {
+  grid-column: 2 / 12;
+}
+
+.projects-sidebar {
+  grid-column: 2 / 12;
+}
+
+.project {
+  grid-column: 2 / 12;
+}
+
+.team-container {
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  padding: 0 20px;
 }

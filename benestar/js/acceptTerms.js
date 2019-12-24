@@ -1,6 +1,22 @@
+var $popover = $('#popover');
+
 function validateEmail(email) {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
+}
+
+function showMessage(message, $container) {
+  $popover.find('.popover-message').text(message);
+  var marginLeft = $container.outerWidth() / 2 - $('#popover').outerWidth() / 2;
+  $popover
+    .css('margin-top', -12)
+    .css('margin-left', marginLeft)
+    .appendTo($container)
+    .show();
+}
+
+function hideMessage() {
+  $popover.hide();
 }
 
 function handleSubmit(event) {
@@ -8,59 +24,61 @@ function handleSubmit(event) {
   var $email = $('#email');
   var $message = $('#message');
 
-  // Hide all errors
-  $name.popover('hide');
-  $email.popover('hide');
-  $message.popover('hide');
+  // Hide error
+  hideMessage();
 
   // Validate name
   if (!$name.val()) {
-    $name.popover('show');
     event.preventDefault();
     event.stopPropagation();
+    var message = 'Por favor introduce tu nombre.';
+    var $container = $name.parent();
+    showMessage(message, $container);
+    $name.addClass('has-error');
     return;
-  } else {
-    $name.popover('hide');
   }
 
   // Validate email
   var emailValue = $email.val();
   if (!emailValue) {
-    $email.attr('data-content', '<i class="fas fa-exclamation-triangle"></i> Porfavor introduce tu correo electrónico.');
-    $email.popover('show');
     event.preventDefault();
     event.stopPropagation();
+    var message = 'Porfavor introduce tu correo electrónico.';
+    var $container = $email.parent();
+    showMessage(message, $container);
+    $email.addClass('has-error');
     return;
   } else if (!validateEmail(emailValue)) {
-    $email.attr('data-content', '<i class="fas fa-exclamation-triangle"></i> El correo electrónico no tiene un formato válido.');
-    $email.popover('show');
     event.preventDefault();
     event.stopPropagation();
+    var message = 'El correo electrónico no tiene un formato válido.';
+    var $container = $email.parent();
+    showMessage(message, $container);
+    $email.addClass('has-error');
     return;
-  } else {
-    $email.popover('hide');
   }
 
   // Validate message
   if (!$message.val()) {
-    $message.popover('show');
     event.preventDefault();
     event.stopPropagation();
+    var message = 'Por favor introduce tu mensaje.';
+    var $container = $message.parent();
+    showMessage(message, $container);
+    $message.addClass('has-error');
     return;
-  } else {
-    $message.popover('hide');
   }
 }
 
 function handleInputKeyUp() {
-  if ($(this).val()) {
-    $(this).popover('hide');
+  var $this = $(this);
+  if ($this.val() && $this.hasClass('has-error')) {
+    hideMessage();
   }
 };
 
 
 $(document).ready(function(){
-  $('input, textarea').popover({trigger: 'manual'});
   $('.contact-form').submit(handleSubmit);
   $('#name, #email, #message').keyup(handleInputKeyUp);
 });

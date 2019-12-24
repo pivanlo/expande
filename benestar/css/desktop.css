@@ -1,11 +1,58 @@
 .navbar .container {
   line-height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #social-icons {
+  grid-column: 10 / 13;
   text-align: right;
 }
 
 .hero {
   padding: 100px 0;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.col-desktop-3 {
+  grid-column: 1 / 4;
+}
+
+
+#footer-main {
+  grid-column: 4 / 10;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  grid-column: 1 / 6;
+}
+
+.map {
+  grid-column: 6 / 13;
+}
+
+.projects-sidebar {
+  grid-column: 2 / 6;
+  margin-right: 30px;
+}
+
+.project {
+  grid-column: 6 / 12;
+}
+
+.team-member-card {
+  /*grid-column: 1 / 5;*/
+}
+
+.team-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
 }

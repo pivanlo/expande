@@ -5,7 +5,6 @@
     <meta name="description" content="">
     <link rel="icon" href="images/favicon_32.png" sizes="32x32" type="image/png"> 
     <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
     <link media="screen and (max-width: 991px)" href="./css/mobile.css" rel="stylesheet">
@@ -13,8 +12,8 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand navbar-light fixed">
-      <div class="container flex-column flex-md-row">
+    <nav class="navbar fixed">
+      <div class="container">
         <a class="navbar-brand" href="index.html">
           <img id="logo" src="images/logo-blanco.svg" height="35">
         </a>
@@ -29,7 +28,7 @@
         </div>
 
         <div class="nav-desktop">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="index.html">
                 Inicio
@@ -45,22 +44,20 @@
 
     <div class="header secondary-bg">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12" style="display:flex;align-items:center;justify-content:center;">
-            <h1>Gracias por tu mensaje</h1>
-          </div>
+        <div class="col-8">
+          <h1>Gracias por tu mensaje</h1>
         </div>
       </div>
     </div>
 
-    <div clas="section-3" style="background-color:#f5f5f5;">
-      <div class="container section-3-block">
-        <div class="row">
-          <div class="offset-lg-2 col-lg-8">
-            <p style="font-size:18px;color:#777f85;font-weight:400;">Muchas gracias por tu mensaje. Nos pondremos en contacto contigo muy pronto.</p>
-            <div style="font-size:18px;color:#777f85;font-weight:400;">
-              <a href="index.html">Volver a la página de inicio</a>
-            </div>
+    <div style="background-color:#f5f5f5;">
+      <div class="container" style="padding:50px 0;">
+        <div class="col-8">
+          <p>
+            Muchas gracias por tu mensaje. Nos pondremos en contacto contigo muy pronto.
+          </p>
+          <div style="font-size:18px;color:#777f85;font-weight:400;">
+            <a href="index.html">Volver a la página de inicio</a>
           </div>
         </div>
       </div>
@@ -68,34 +65,27 @@
 
     <div class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3" style="line-height:80px;">
-            <img class="footer-logo" src="images/logo-gris.svg" height="40">
+        <div id="footer-logo" class="col-desktop-3 col-mobile-12" style="line-height:80px;">
+          <img src="images/logo-gris.svg" height="40">
+        </div>
+        <div id="footer-main">
+          <div id="footer-links">
+            <div class="footer-links"><a href="index.html">Inicio</a></div>
+            <div class="footer-links"><a href="terapia-individual.html">Servicios</a></div>
+            <div class="footer-links"><a href="nuestro-equipo.html">Nuestro equipo</a></div>
+            <div class="footer-links"><a href="contacto.html">Contacto</a></div>
           </div>
-          <div class="col-lg-6">
-            <div class="row footer-links-container">
-              <div class="footer-links"><a href="index.html">Inicio</a></div>
-              <div class="footer-links"><a href="terapia-individual.html">Servicios</a></div>
-              <div class="footer-links"><a href="nuestro-equipo.html">Nuestro equipo</a></div>
-              <div class="footer-links"><a href="contacto.html">Contacto</a></div>
-            </div>
-            <div class="row">
-              <div style="text-align:center;line-height:30px;">Copyright © 2019. Associació PSIENTE. Todos los derechos reservados</div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div id="social-icons">
-              <a href="https://twitter.com/APsiente" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.facebook.com/associacio.psiente" target="_blank"><i class="fab fa-facebook ml-5"></i></a>
-            </div>
-          </div>
+          <div style="text-align:center;line-height:30px;">Copyright © 2019. Associació PSIENTE. Todos los derechos reservados</div>
+        </div>
+        <div id="social-icons">
+          <a href="https://twitter.com/APsiente" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/associacio.psiente" target="_blank"><i class="fab fa-facebook ml-5"></i></a>
         </div>
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a93f17701c.js" crossorigin="anonymous"></script>
 
 </body></html>

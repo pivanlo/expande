@@ -203,6 +203,10 @@ img.floating-image {
   margin-bottom: 15px;
 }
 
+.footer-links {
+  line-height: 40px;
+}
+
 .footer-links a {
   color: #a8b3ba;
 }

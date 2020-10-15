@@ -4,71 +4,81 @@ function validateEmail(email) {
 }
 
 function handleSubmit(event) {
-  var $name = $('#name');
-  var $surnames = $('#surnames');
-  var $email = $('#email');
-  var $message = $('#message');
+  if ($("#no-spam-please").val().length != 0) {
+    return false;
+  }
+
+  var $name = $("#name");
+  var $surnames = $("#surnames");
+  var $email = $("#email");
+  var $message = $("#message");
 
   // Hide all errors
-  $name.popover('hide');
-  $surnames.popover('hide');
-  $email.popover('hide');
-  $message.popover('hide');
-  $('#termsPopover').hide();
+  $name.popover("hide");
+  $surnames.popover("hide");
+  $email.popover("hide");
+  $message.popover("hide");
+  $("#termsPopover").hide();
 
   // Validate name
   if (!$name.val()) {
-    $name.popover('show');
+    $name.popover("show");
     event.preventDefault();
     event.stopPropagation();
     return;
   } else {
-    $name.popover('hide');
+    $name.popover("hide");
   }
 
   // Validate surnames
-  if ($('#surnames').length) {
+  if ($("#surnames").length) {
     if (!$surnames.val()) {
-      $surnames.popover('show');
+      $surnames.popover("show");
       event.preventDefault();
       event.stopPropagation();
       return;
     } else {
-      $surnames.popover('hide');
+      $surnames.popover("hide");
     }
   }
 
   // Validate email
   var emailValue = $email.val();
   if (!emailValue) {
-    $email.attr('data-content', '<i class="fas fa-exclamation-triangle"></i> Porfavor introduce tu correo electrónico.');
-    $email.popover('show');
+    $email.attr(
+      "data-content",
+      '<i class="fas fa-exclamation-triangle"></i> Porfavor introduce tu correo electrónico.'
+    );
+    $email.popover("show");
     event.preventDefault();
     event.stopPropagation();
     return;
   } else if (!validateEmail(emailValue)) {
-    $email.attr('data-content', '<i class="fas fa-exclamation-triangle"></i> El correo electrónico no tiene un formato válido.');
-    $email.popover('show');
+    $email.attr(
+      "data-content",
+      '<i class="fas fa-exclamation-triangle"></i> El correo electrónico no tiene un formato válido.'
+    );
+    $email.popover("show");
     event.preventDefault();
     event.stopPropagation();
     return;
   } else {
-    $email.popover('hide');
+    $email.popover("hide");
   }
 
   // Validate message
   if (!$message.val()) {
-    $message.popover('show');
+    $message.popover("show");
     event.preventDefault();
     event.stopPropagation();
     return;
   } else {
-    $message.popover('hide');
+    $message.popover("hide");
   }
 
   // Validate terms
-  if (!$('#terms').is(":checked")) {
-    $('#termsPopover').show();
+  if (!$("#terms").is(":checked")) {
+    $("#termsPopover").show();
     event.preventDefault();
     event.stopPropagation();
     return;
@@ -77,21 +87,20 @@ function handleSubmit(event) {
 
 function handleInputKeyUp() {
   if ($(this).val()) {
-    $(this).popover('hide');
+    $(this).popover("hide");
   }
-};
+}
 
 function handleTermsChange() {
-  if ($('#terms').is(":checked")) {
-    $('#termsPopover').hide();
+  if ($("#terms").is(":checked")) {
+    $("#termsPopover").hide();
     return;
   }
-};
+}
 
-
-$(document).ready(function(){
-  $('input, textarea').popover({trigger: 'manual'});
-  $('.contact-form').submit(handleSubmit);
-  $('#name, #email, #message').keyup(handleInputKeyUp);
-  $('#terms').change(handleTermsChange);
+$(document).ready(function() {
+  $("input, textarea").popover({ trigger: "manual" });
+  $(".contact-form").submit(handleSubmit);
+  $("#name, #email, #message").keyup(handleInputKeyUp);
+  $("#terms").change(handleTermsChange);
 });

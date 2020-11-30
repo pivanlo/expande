@@ -47,7 +47,7 @@ function handleSubmit(event) {
   if (!emailValue) {
     $email.attr(
       "data-content",
-      '<i class="fas fa-exclamation-triangle"></i> Porfavor introduce tu correo electrónico.'
+      '<i class="fas fa-exclamation-triangle"></i> Por favor introduce tu correo electrónico.'
     );
     $email.popover("show");
     event.preventDefault();

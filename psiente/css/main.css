@@ -665,3 +665,18 @@ input, textarea {
   position: relative;
   margin-bottom: 20px;
 }
+
+.team-member-link {
+  margin-top: 20px;
+  font-size: small;
+  color: white;
+  background-color: #25323c;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.team-member-link:hover {
+  background-color: #1b252c;
+  color: white;
+  text-decoration: none;
+}

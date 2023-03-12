@@ -1,0 +1,25 @@
+.btn-donar {
+  background-color: #ffc107;
+  color: black;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-donar:hover {
+  opacity: 0.8;
+  color: black;
+  text-decoration: none;
+}
+
+.container-col-4 {
+  grid-gap: 2rem;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.container-col-4 h5 {
+  margin-bottom: 20px;
+}

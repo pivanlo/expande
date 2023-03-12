@@ -26,10 +26,10 @@
   grid-column: 4 / 10;
 }
 
-#footer-links {
+.footer-links {
   display: flex;
-  /* justify-content: space-between; */
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
 .contact {
